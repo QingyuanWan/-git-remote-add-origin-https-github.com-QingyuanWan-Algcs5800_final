@@ -19,6 +19,12 @@
 
 
 ---
+| Task                                 | Start Date   | End Date     | Status       |
+|--------------------------------------|--------------|--------------|--------------|
+| Select Algorithm                     | 2024-11-11   | 2024-11-11   | In Progress  |
+| Break Down Part                      | 2024-11-11   | TBD          | In Progress  |
+| Review Individual Part               | 2024-11-13   | TBD          | In Progress  |
+| Integrate and Debug                  | 2024-11-13   | TBD          | In Progress  |
 
 
 ## Project Overview
