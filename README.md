@@ -137,3 +137,43 @@ git push origin test_git
 
 ### 5. Merge Changes
 - Once the review is approved, and all tests pass, merge the PR.
+
+
+
+## Collaboration Workflow(If use Git app)
+GitHub Setting up your branch Instructions: 
+Go to file "Clone repository" Select Project tied with
+Once it finishes cloning: Go to "Branch" --> "New Branch"
+Name your Branch "FirstInitialLastName"
+"Publish branch"
+Finished.
+
+How to properly Start working in GitHub: 
+Make sure you're on your made branch
+Hit "Fetch Origin"
+Go to YOUR Branch select: "Update from main"
+Wait it will either say push or "is already up to date with main"
+Clock-In for the day at ⁠clock in-and-clock-out-tracker following the pinned comment in the channel for clocking in
+Clock-Out for the day at clock in-and-clock-out-tracker following the pinned comment in the channel for clocking out
+
+How to Properly Finish working in Github: 
+Choice 1:
+Commit work to your branch
+Push commit, if any conflicts occur always use main!!!
+Change branch to main
+Go to Branch select "merge into current branch"
+Push, if any conflicts occur always use main!!!
+Return to your made branch
+
+Choice 2:
+Commit work to your branch
+Push commit,  if any conflicts occur always use main!!!
+Hit preview pull request and keep hitting blue button till says merge to main
+If conflicts appear always use main or contact a lead for assistance on merging
+
+If you see something checked out that you need to work on: 
+Contact who's working on that and see if it's been pushed to main
+If not let them know you need it and to report to you when it's available again
+
+Do not work on something when someone else has it checked out
+you will have to redo what you did.
