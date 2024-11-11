@@ -21,6 +21,7 @@
 ---
 | Task                                 | Start Date   | End Date     | Status       |
 |--------------------------------------|--------------|--------------|--------------|
+| Setup Git                            | 2024-11-11   | 2024-11-11   | Complete     |
 | Select Algorithm                     | 2024-11-11   | 2024-11-11   | In Progress  |
 | Break Down Part                      | 2024-11-11   | TBD          | In Progress  |
 | Review Individual Part               | 2024-11-13   | TBD          | In Progress  |
