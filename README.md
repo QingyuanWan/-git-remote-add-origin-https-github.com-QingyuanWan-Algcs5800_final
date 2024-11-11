@@ -1,4 +1,4 @@
-# CS5800 Final Project - Team Name TBD
+# CS5800 Final Project - Team - TBD
 
 
 ## Table of Contents
