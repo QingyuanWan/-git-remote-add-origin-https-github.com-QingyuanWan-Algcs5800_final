@@ -6,6 +6,7 @@ def solve_knights_tour(board, x, y, move_count):
     y_cor = len(board[0])
     size = x_cor * y_cor
     if move_count == size:
+
         return True
     
     knight_moves = [
@@ -60,6 +61,7 @@ def main():
     board = create_init_table(input_m, input_n) # input m n from UI
 
     start_x, start_y = 0, 0  # change be daymic change, input by click in UI board
+
     board[start_x][start_y] = 0  # First move init, need init in UI
     
     if solve_knights_tour(board, start_x, start_y, 1):
@@ -67,6 +69,7 @@ def main():
         test_print(board)
     else:
         print("Log Error: Non valid graph.")
+
 
 if __name__ == "__main__":
     main()
