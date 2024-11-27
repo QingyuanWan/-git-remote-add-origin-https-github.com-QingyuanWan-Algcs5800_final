@@ -67,5 +67,7 @@ def main():
     else:
         print("Log Error: Non valid graph.")
 
+
+
 if __name__ == "__main__":
     main()
