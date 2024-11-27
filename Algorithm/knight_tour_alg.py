@@ -2,9 +2,10 @@ def solve_knights_tour(board, x, y, move_count):
     """Recursively attempt to solve the Knight's Tour problem using backtracking."""
     """This code come from https://medium.com/@davidlfliang/intro-python-algorithms-knights-tour-problem-ab0a27a5728c"""
 
-    size = len(board)
-    
-    if move_count == size * size:
+    x_cor = len(board)
+    y_cor = len(board[0])
+    size = x_cor * y_cor
+    if move_count == size:
         return True
     
     knight_moves = [
@@ -55,10 +56,10 @@ def main():
     """Test case"""
     
     input_m = 5
-    input_n = 5
+    input_n = 6
     board = create_init_table(input_m, input_n) # input m n from UI
 
-    start_x, start_y = 2, 4  # change be daymic change, input by click in UI board
+    start_x, start_y = 0, 0  # change be daymic change, input by click in UI board
     board[start_x][start_y] = 0  # First move init, need init in UI
     
     if solve_knights_tour(board, start_x, start_y, 1):
