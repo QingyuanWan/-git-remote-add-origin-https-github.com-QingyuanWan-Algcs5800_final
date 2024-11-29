@@ -11,11 +11,11 @@ def create_animation(solution_board):
     board_rows = len(solution_board)
     board_cols = len(solution_board[0])
 
-    knight_img = mpimg.imread('/Users/rajkavathekar/Downloads/chess-knight.png')
+    knight_img = mpimg.imread('knight.webp')
     if len(solution_board) > 5:
         imagebox = OffsetImage(knight_img, zoom=0.07)
     else:
-        imagebox = OffsetImage(knight_img, zoom=0.1)
+        imagebox = OffsetImage(knight_img, zoom=0.07)
 
     # Find coordinates for each move number
     move_positions = {}
