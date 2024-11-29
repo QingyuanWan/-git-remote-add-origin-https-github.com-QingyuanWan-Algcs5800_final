@@ -1,3 +1,6 @@
+from Visualization.Knight_Animation import create_animation
+
+
 def solve_knights_tour(board, x, y, move_count):
     """Recursively attempt to solve the Knight's Tour problem using backtracking."""
     """This code come from https://medium.com/@davidlfliang/intro-python-algorithms-knights-tour-problem-ab0a27a5728c"""
@@ -53,11 +56,8 @@ def test_print(board):
         
 
 
-def main():
+def run_algo(input_m, input_n):
     """Test case"""
-    
-    input_m = 5
-    input_n = 6
     board = create_init_table(input_m, input_n) # input m n from UI
 
     start_x, start_y = 0, 0  # change be daymic change, input by click in UI board
@@ -67,9 +67,8 @@ def main():
     if solve_knights_tour(board, start_x, start_y, 1):
         print("Log: valid graph")
         test_print(board)
+        create_animation(board)
+        return True
     else:
         print("Log Error: Non valid graph.")
-
-
-if __name__ == "__main__":
-    main()
+        return False
