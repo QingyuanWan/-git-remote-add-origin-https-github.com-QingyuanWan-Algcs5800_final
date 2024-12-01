@@ -11,7 +11,7 @@ def create_animation(solution_board):
     board_rows = len(solution_board)
     board_cols = len(solution_board[0])
 
-    knight_img = mpimg.imread('knight.webp')
+    knight_img = mpimg.imread('chess-knight-2.png')
     if len(solution_board) > 5:
         imagebox = OffsetImage(knight_img, zoom=0.07)
     else:
