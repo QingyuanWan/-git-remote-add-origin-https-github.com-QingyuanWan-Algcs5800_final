@@ -7,11 +7,11 @@ def main():
     #CITATION: https://www.geeksforgeeks.org/python-gui-tkinter/#
     master = Tk()
     master.title('Knight Tour')
-    labelRow = Label(master, text='number of rows')
+    labelRow = Label(master, text='Number of rows',font=("Arial", 16, "bold"))
     labelRow.grid(row=0, column = 0)
-    LabelColumn = Label(master, text='number of columns')
+    LabelColumn = Label(master, text='Number of columns', font=("Arial", 16, "bold"))
     LabelColumn.grid(row=1, column=0)
-    label_inv = Label(master, text="invalid board, try again.")
+    label_inv = Label(master, text="Invalid board, try again.", font=("Arial", 16, "bold"))
 
     e1 = Entry(master)
     e2 = Entry(master)
@@ -42,7 +42,7 @@ def center_and_top(window):
     x = (screen_width - width) // 2
     y = (screen_height - height) // 2
 
-    window.geometry(f"{700}x{500}+{x - height}+{y - width}")
+    window.geometry(f"{400}x{200}+{x - height}+{y - width}")
     window.lift()
     window.focus_force()
 

@@ -17,7 +17,7 @@ def create_animation(solution_board):
     else:
         imagebox = OffsetImage(knight_img, zoom=0.07)
 
-    # Find coordinates for each move number
+    # Finds coordinates for each move number
     move_positions = {}
     for i in range(board_rows):
         for j in range(board_cols):
@@ -35,20 +35,20 @@ def create_animation(solution_board):
                 ax.text(j + 0.5, board_rows-1-i + 0.5, str(solution_board[i][j]),
                      ha='center', va='center')
 
-    # Draw path up to current frame
+    # Draws path up to current frame
         path_coords = [move_positions[i] for i in range(frame + 1)]
         if path_coords:
             path_x = [coord[1] + 0.5 for coord in path_coords]  # Add 0.5 to center in tile
             path_y = [board_rows-1-coord[0] + 0.5 for coord in path_coords]  # Add 0.5 to center in tile
             ax.plot(path_x, path_y, 'b-', alpha=0.5)
 
-        # Draw knight at current position centered in tile
+        # Draws knight at current position centered in tile
         if frame in move_positions:
             curr_x, curr_y = move_positions[frame]
             ab = AnnotationBbox(imagebox, (curr_y + 0.5, board_rows-1-curr_x + 0.5), frameon=False)
             #ax.plot(curr_y + 0.5, board_size-1-curr_x + 0.5, 'ro', markersize=20)
             ax.add_artist(ab)
-     # Ensure full board visibility
+     # Ensures full board visibility
         #ax.set_xlim(-0.9, board_size-0.1)
         #ax.set_ylim(-0.9, board_size-0.1)
         ax.grid(True)
@@ -66,5 +66,5 @@ def create_animation(solution_board):
     )
     plt.show()
 
-# After your algorithm finds the solution, call:
+# After algorithm finds the solution make sure you call this in main bro:
 # create_animation(board)
